@@ -10,7 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 			Scanner in = new Scanner(System.in);
 
-			System.out.println("Запустить программу в режиме сервера или клиента? (S(erver) / C(lient))");
+			System.out.println("S(erver) / C(lient)");
 			while (true) {
 				char answer = Character.toLowerCase(in.nextLine().charAt(0));
 				if (answer == 's') {
@@ -20,7 +20,7 @@ public class Main {
 					new Client();
 					break;
 				} else {
-					System.out.println("Некорректный ввод. Повторите.");
+					System.out.println("No. S or C");
 				}
 			}
 			in.close();
